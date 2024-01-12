@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+    {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{%static 'AppCoder/Cursos/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{%url 'Inicio'%}">CODERHOUSE</a>
+                <a class="btn btn-dark" href="{% url 'Curso' %}">Cursos</a>
+                <a class="btn btn-dark" href="{% url 'Carreras' %}">Carreras</a>
+                <a class="btn btn-dark" href="{% url 'Plataforma' %}">Plataforma</a> 
+
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5" style="color: #000000;">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">!Encuentra tu curso ideal!</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Hay disponibilidad de cursos en Diseño UX/UI, Marketing Digital, Programación y Desarrollo, Producto, Data, Herramientas Digitales, Negocios, Inglés, Habilidades blandas, Inteligencia Artificial</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://i.blogs.es/1d8a5b/python1/1366_2000.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Python</h5>
+                                    <!-- Product price-->
+                                    $194.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Plataforma' %}">Inscribirme ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://previews.123rf.com/images/darkovujic/darkovujic2110/darkovujic211000001/175783980-dise%C3%B1o-web-ui-ux-concepto-de-desarrollo-web-dise%C3%B1o-web-dise%C3%B1o-de-aplicaciones-codificaci%C3%B3n-y.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Diseño UX/UI</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$180.00</span>
+                                    $140.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Plataforma' %}">Inscribirme ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://previews.123rf.com/images/perig76/perig761703/perig76170300174/73332554-vista-del-concepto-de-hombre-futurista-interfaz-community-manager-t%C3%ADtulo-y-multimedia-iconos-volando.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Community Manager & Publicidad</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$150.00</span>
+                                    $123.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Plataforma' %}">Inscribirme ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://previews.123rf.com/images/islander11/islander112206/islander11220600010/187718481-foto-de-primer-plano-de-un-c%C3%B3digo-sql-lenguaje-de-consulta-estructurado-de-la-pantalla-de-la.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">SQL</h5>
+                                    <!-- Product price-->
+                                    $160.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Plataforma' %}">Inscribirme ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://buhoagenciadigital.com/wp-content/uploads/2023/09/tecnologia-de-comercio-electronico-en-accion.jpg.webp" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">E-commerce</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$76.00</span>
+                                    $125.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Plataforma' %}">Inscribirme ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://i.blogs.es/e81bd6/excel/1366_2000.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Excel Avanzado</h5>
+                                    <!-- Product price-->
+                                    $100.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Plataforma' %}">Inscribirme ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://previews.123rf.com/images/nx123nx/nx123nx2204/nx123nx220400343/186894209-dresden-sajonia-alemania-26-de-septiembre-de-2019-oficina-de-sap-en-dresden-alemania-sap-es.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">SAP</h5>
+                                
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$135.00</span>
+                                    $110.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Plataforma' %}">Inscribirme ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*nke7diDpQAjynhSR4LT7vQ.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Blockchain</h5>
+                                    <!-- Product price-->
+                                    $130.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Plataforma' %}">Inscribirme ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a style="color: #ffffff;" href="#!">Sobre mí</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a style="color: #ffffff;" href="#!">Contacto</a></li>
+                            <li class="list-inline-item">⋅</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a style="color: #ffffff;" href="https://www.facebook.com/Coderhouse/?locale=es_LA"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a style="color: #ffffff;" href="https://twitter.com/coderhouse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a  style="color: #ffffff;" href="https://www.instagram.com/coderhouse/?hl=es-la"><i class="bi-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

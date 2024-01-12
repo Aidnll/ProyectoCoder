@@ -1,0 +1,26 @@
+{%extends "AppCoder/padreplat.html" %}
+
+{%load static%}
+
+{% block tittle %}
+
+Nuevo profesor
+
+{% endblock %}
+
+
+{% block description %}
+    
+<form action="" method="POST" style="display: flex; justify-content: center;"> {% csrf_token %}
+
+
+    <table>
+    
+        {{form3.as_table}}
+    
+    </table>
+    
+    <input type="submit" value="Enviar">
+</form>
+
+{% endblock %}
