@@ -1,12 +1,14 @@
 # Página web con Django y HTML
 
-Esta página web fue creada con Django y HTML. Cuenta con 4 ventanas:
+Esta página web fue creada con Django y HTML. Cuenta con 5 ventanas:
 
 Home: Esta ventana muestra información general sobre la página web.
 
 Cursos: Esta ventana muestra una lista de todos los cursos disponibles.
 
 Carreras: Esta ventana muestra una lista de todas las carreras disponibles.
+
+Blog: Esta ventana permite crear sesion e iniciar a esribir y postear blogs en la pagina
 
 Plataforma: Esta ventana contiene otras 4 ventanas:
 
