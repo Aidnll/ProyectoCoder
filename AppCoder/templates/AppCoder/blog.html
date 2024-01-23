@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'AppCoder/Blog/Blog/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{%url 'Inicio'%}">CODERHOUSE</a>
+                <a class="btn btn-dark" href="{% url 'Curso' %}">Cursos</a>
+                <a class="btn btn-dark" href="{% url 'Carreras' %}">Carreras</a>
+                <a class="btn btn-dark" href="{% url 'Plataforma' %}">Plataforma</a> 
+
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">¡Bienvenido a nuestro Blog!</h1>
+                    <p class="lead mb-0">Conéctate con nosotros</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <a href="{% url 'Post1' %}"><img class="card-img-top" src="data:image/jpeg;base64,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" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">Enero 02, 2024</div>
+                            <h2 class="card-title">Educación online: ¿el futuro de la educación?</h2>
+                            <p class="card-text">En los últimos años, la educación online ha experimentado un crecimiento exponencial. Esto se debe a una serie de factores, como el aumento de la conectividad a Internet, la disponibilidad de dispositivos móviles y el cambio de las preferencias de los estudiantes.</p>
+                            <a class="btn btn-primary" href="{% url 'Post1' %}">Leer más →</a>
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="{% url 'Post2' %}"><img class="card-img-top" src="https://www.nodoka.co/apc-aa-files/2d68301fd65fc2f9343424a5c5e292ce/20181008201720-realidad-aumentada.jpeg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Diciembre 11, 2023</div>
+                                    <h2 class="card-title h4">Tecnologías emergentes: ¿cómo están transformando la educación?</h2>
+                                    <p class="card-text">Las tecnologías emergentes, como la realidad virtual, la realidad aumentada, la inteligencia artificial y el aprendizaje automático, están transformando la educación de formas que nunca antes habíamos imaginado.</p>
+                                    <a class="btn btn-primary" href="{% url 'Post2' %}">Leer más →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="{% url 'Post3' %}"><img class="card-img-top" src="https://www.redem.org/wp-content/uploads/2021/05/1620234748-Futuro-de-las-Clases.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Agosto 25, 2023</div>
+                                    <h2 class="card-title h4">Experiencias positivas de aprendizaje online</h2>
+                                    <p class="card-text">La educación online puede ser una experiencia muy positiva, tanto para los estudiantes como para los profesores. En este post, compartimos algunas historias de personas que han tenido experiencias positivas de aprendizaje online.</p>
+                                    <a class="btn btn-primary" href="{% url 'Post3' %}">Leer más →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="{% url 'Post4' %}"><img class="card-img-top" src="https://e8cuz2bphm9.exactdn.com/blog/wp-content/uploads/2014/01/empresa-en-internet.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Mayo 18, 2023</div>
+                                    <h2 class="card-title h4">Consejos para tener éxito en la educación online</h2>
+                                    <p class="card-text">La educación online puede ser un reto, pero con los consejos adecuados, puedes tener éxito. En este post, compartimos algunos consejos para tener éxito en la educación online.</p>
+                                    <a class="btn btn-primary" href="{% url 'Post4' %}">Leer más →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="{% url 'Post5' %}"><img class="card-img-top" src="data:image/jpeg;base64,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" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Febrero 08, 2023</div>
+                                    <h2 class="card-title h4">El futuro de la educación online</h2>
+                                    <p class="card-text">La educación online está en constante evolución, y es difícil predecir su futuro. Sin embargo, hay algunas tendencias que sugieren que la educación online seguirá creciendo en importancia en los próximos años.</p>
+                                    <a class="btn btn-primary" href="{% url 'Post5' %}">Leer más →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination-->
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                      <div class="card-header">Blogs</div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-12" style="width: 100%;">
+                            <div class="mb-3">  
+                                
+                            {% for blog in object_list %}
+                                <p>Titulo: {{blog.titulo}}</p>
+                                <p>Codigo: {{blog.codigo}}</p>
+                                <p>Autor: {{blog.autor}}</p>
+                                <div class="d-flex justify-content-center">
+                                    <a class="btn btn-dark" href="{% url 'EliminarBlogs' blog.codigo %}" style="margin-right: 10px;">Eliminar Blog</a>
+                                    <a class="btn btn-dark" href="{% url 'EditarBlogs' blog.codigo %}" style="margin-right: 10px;">Editar Blog</a>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    .......................................................................................
+                                </div>
+                            {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

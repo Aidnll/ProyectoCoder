@@ -14,7 +14,7 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'AppCoder/css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'AppCoder/Pagina_principal/Main/css/styles.css' %}" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
@@ -23,6 +23,7 @@
                 <a class="navbar-brand" href="{%url 'Inicio'%}">CODERHOUSE</a>
                 <a class="btn btn-dark" href="{% url 'Curso' %}">Cursos</a>
                 <a class="btn btn-dark" href="{% url 'Carreras' %}">Carreras</a>
+                <a class="btn btn-dark" href="{% url 'Login' %}">Blog</a> 
                 <a class="btn btn-dark" href="{% url 'Plataforma' %}">Plataforma</a> 
 
             </div>
@@ -102,21 +103,21 @@
         <section class="showcase" style="background-color: #000000;">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img"  style="background-image: url({% static 'AppCoder/assets/img/bg-showcase-1.jpg' %})"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img"  style="background-image: url({% static 'AppCoder/Pagina_principal/Main/assets/img/bg-showcase-1.jpg' %})"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <h2 style="color: #ffffff;" >La mejor educación de facil acceso</h2>
                         <p style="color: #ffffff;" class="lead mb-0">Inscríbete a clases prácticas con mentorías personalizadas dictadas por quienes más saben, y prepárate para dar el siguiente paso en tu carrera profesional.</p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img"  style="background-image: url({% static 'AppCoder/assets/img/bg-showcase-2.jpg' %})"></div>
+                    <div class="col-lg-6 text-white showcase-img"  style="background-image: url({% static 'AppCoder/Pagina_principal/Main/assets/img/bg-showcase-2.jpg' %})"></div>
                     <div class="col-lg-6 my-auto showcase-text">
                         <h2 style="color: #ffffff;" >Aprende junto a tus compañeros</h2>
                         <p style="color: #ffffff;" class="lead mb-0">Está demostrado que aprender en grupo es más eficiente y motivador. El networking con tus compañeros de clase ayuda a que puedas tener nuevas ideas y hacer mejores proyectos.</p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img"  style="background-image: url({% static 'AppCoder/assets/img/bg-showcase-3.jpg' %})"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img"  style="background-image: url({% static 'AppCoder/Pagina_principal/Main/assets/img/bg-showcase-3.jpg' %})"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <h2 style="color: #ffffff;">Avalado por empresas</h2>
                         <p style="color: #ffffff;" class="lead mb-0">El contenido de nuestros cursos y carreras está avalado por las empresas de tecnología más innovadoras a nivel global.</p>
@@ -131,21 +132,21 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="{%static 'AppCoder/assets/img/testimonials-1.jpg' %}" alt="..." />
+                            <img class="img-fluid rounded-circle mb-3" src="{%static 'AppCoder/Pagina_principal/Main/assets/img/testimonials-1.jpg' %}" alt="..." />
                             <h5 style="color: #ffffff;">Margaret E.</h5>
                             <p style="color: #ffffff;" class="font-weight-light mb-0">"Coderhouse es fantastico! He aprendido mas de lo que pude imaginar"</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="{%static 'AppCoder/assets/img/testimonials-2.jpg' %}" alt="..." />
+                            <img class="img-fluid rounded-circle mb-3" src="{%static 'AppCoder/Pagina_principal/Main/assets/img/testimonials-2.jpg' %}" alt="..." />
                             <h5 style="color: #ffffff;" >Fred S.</h5>
                             <p style="color: #ffffff;" class="font-weight-light mb-0">"Coderhouse es increible. He tomado ya varios cursos y estoy muy contento por la educacion que obtengo."</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="{%static 'AppCoder/assets/img/testimonials-3.jpg' %}" alt="..." />
+                            <img class="img-fluid rounded-circle mb-3" src="{%static 'AppCoder/Pagina_principal/Main/assets/img/testimonials-3.jpg' %}" alt="..." />
                             <h5 style="color: #ffffff;" >Sarah W.</h5>
                             <p style="color: #ffffff;" class="font-weight-light mb-0">"Gracias por preocuparse por ofrecer una excelente educacion"</p>
                         </div>
@@ -170,9 +171,8 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a style="color: #ffffff;" href="#!">Sobre mí</a></li>
+                            <li class="list-inline-item"><a style="color: #ffffff;" href="{% url 'AboutMe' %}">Sobre mí</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a style="color: #ffffff;" href="#!">Contacto</a></li>
                             <li class="list-inline-item">⋅</li>
                         </ul>
                         <p class="text-muted small mb-4 mb-lg-0">&copy; Coderhouse</p>
