@@ -39,4 +39,4 @@ Para desarrollar la página web, se utilizaron los siguientes pasos:
 4. Migrar la base de datos.
 
 Mejoras
-Estoy considerando implementarle más funcionalidades a las ventanas que permitan una mayor movilidad entre ventanas.
+Estoy considerando implementarle más funcionalidades a las ventanas que permitan una mayor movilidad entre las mismas.
